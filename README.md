@@ -4,7 +4,7 @@ Aşırı dengesiz (imbalanced) veri setlerinde makine öğrenmesi modeli kurup "
 Amacım sadece fraud tespiti yapmak değil; masum bir müşterinin kartını boş yere bloke etmenin maliyetiyle, bir dolandırıcıyı gözden kaçırmanın maliyeti arasındaki o hassas dengeyi kurmaktı.
 
 # Problem Ne Kadar Büyük?
-Kaggle'ın meşhur Credit Card Fraud veri setiyle çalıştım. Elimdeki 284 bin işlemin sadece 492'si sahteydi (Fraud). Yani oran %0.17 gibi korkunç düşük bir seviyede. Eğer hiç kod yazmayıp "bütün işlemler normaldir" diyen bir fonksiyon çalıştırsaydım bile zaten %99.8 doğru bilecektim. O yüzden projeye başlarken "Accuracy" (Doğruluk) metriğini tamamen çöpe attım.
+Kaggle'ın meşhur Credit Card Fraud veri setiyle çalıştım. (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) Elimdeki 284 bin işlemin sadece 492'si sahteydi (Fraud). Yani oran %0.17 gibi korkunç düşük bir seviyede. Eğer hiç kod yazmayıp "bütün işlemler normaldir" diyen bir fonksiyon çalıştırsaydım bile zaten %99.8 doğru bilecektim. O yüzden projeye başlarken "Accuracy" (Doğruluk) metriğini tamamen çöpe attım.
 
 Görselleştirme aşamasında normal grafikler hiçbir şey ifade etmediği için Y eksenini logaritmik olarak ezmek zorunda kaldım. Gece saatlerinde fraud oranının düştüğü yanılgısını kırdım, veriyi zaman ve tutar (Amount) bazında iyice bir deştim modele geçmeden önce.
 
