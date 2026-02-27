@@ -4,7 +4,7 @@ The fraud detection and mitigation efforts on credit cards were conducted in a c
 
 My intention was not only to detect fraud transactions (which is what machine learning does), but to find a balance between the cost associated with blocking an innocent customer from using their card (as an annoying inconvenience) and allowing a fraudulent transaction through (which costs money).
 
-The Extent of the Fraud Issue I Used the Kaggle Credit Card Fraud Dataset to conduct the Fraud Analysis. Only 492 out of 284,000 transactions were fraud-related, or Approximately 0.17% of All Transactions Were Fraud. If I wrote a Simple Function That Just Called All Transactions Safe, the Function Would Have A 99.8% Accuracy. This is the reason accuracy was never an element in Evaluating the Model, Since Day One.
+The Extent of the Fraud Issue I Used the Kaggle Credit Card Fraud Dataset to conduct the Fraud Analysis (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud). Only 492 out of 284,000 transactions were fraud-related, or Approximately 0.17% of All Transactions Were Fraud. If I wrote a Simple Function That Just Called All Transactions Safe, the Function Would Have A 99.8% Accuracy. This is the reason accuracy was never an element in Evaluating the Model, Since Day One.
 
 Standard charts were not easily used to Display the Data, so I Had to Compress the Y-Axis Using Logarithmic Scale in Order to View the Minority Class (fraud) with Respect to the Total Quantity of Transactions (found no fraud). I conducted an extensive analysis of the Time and Amount Variables Before I Ever Began Building Models to Deconstruct the Classic Misconception of Transaction Amount.
 
@@ -26,5 +26,6 @@ An $11,956 loss would have been incurred by the bank on this testing set only, b
 
 # Limitations and Next Steps: 
 Production isn't all sunshine and rainbows. The methods employed by fraudsters change over time (also referred to as Data Drift). Therefore, models cannot simply be built once and left on the shelf - they must be continually retrained with new data.
+
 
 I've used libraries such as XGBoost and Scikit-Learn heavily to expedite my work. In the next stage, I aim to learn them better and do more competent projects.
